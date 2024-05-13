@@ -40,7 +40,7 @@ variable "source_ocid" {
 variable "subnet_ocids" {
   description = "Default subnet ocid"
   type    = list(string)
-  default = ["ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaahkxgs76fpkpdbvkm6lsobpgyayyb4nqwlfehk3z3ttrigbb76akq"]
+  default = ["ocid1.subnet.oc1.phx.aaaaaaaaz45ab4eyulowupfdhgz57d2vlzxy2b367bvxicd4dpjs5wgog2jq"]
 }
 variable "public_ip" {
   type    = string
@@ -54,7 +54,7 @@ variable "ssh_public_key" {
 
 variable "shape" {
   type    = string
-  default = "VM.Standard.A1.Flex"
+  default = "VM.Standard3.Flex"
 }
 variable "instance_flex_memory_in_gbs" {
   type    = number
