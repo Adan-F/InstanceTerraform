@@ -21,7 +21,7 @@ variable "fingerprint" {
 }
 variable "region" {
   type    = string
-  default = "eu-frankfurt-1"
+  default = "us-phoenix-1"
 }
 variable "compartment_ocid" {
   type      = string
@@ -33,14 +33,14 @@ variable "instance_display_name" {
   default = "init"
 }
 variable "source_ocid" {
-  description = "Canonical-Ubuntu-22.04-Minimal-aarch64 image in region eu-frankfurt-1"
+  description = "Canonical Linux image in region us--phoenix-1"
   type      = string
-  default   = "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaa7xlh7c3l2xtrn53n5ezp2thnac3hgjo6biolfxisk3l4igfl3xba"
+  default   = "ocid1.image.oc1.phx.aaaaaaaa56mk4xc7nvcvhhtfpafrpeoqijhe33glsx6nmmrdph5yhudisata"
 }
 variable "subnet_ocids" {
   description = "Default subnet ocid"
   type    = list(string)
-  default = ["ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaahkxgs76fpkpdbvkm6lsobpgyayyb4nqwlfehk3z3ttrigbb76akq"]
+  default = ["ocid1.vcn.oc1.phx.amaaaaaau3sk3cqayubnfy3j7dmwvkxlem2zbypmzxaizvdmyzvsncyr6yhq"]
 }
 variable "public_ip" {
   type    = string
@@ -58,11 +58,11 @@ variable "shape" {
 }
 variable "instance_flex_memory_in_gbs" {
   type    = number
-  default = 24
+  default = 12
 }
 variable "instance_flex_ocpus" {
   type    = number
-  default = 4
+  default = 1
 }
 variable "instance_state" {
   type    = string
